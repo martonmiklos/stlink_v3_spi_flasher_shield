@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -244,7 +244,7 @@ You can found the most recent version
 </symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1.27" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
@@ -5987,6 +5987,36 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </library>
 <library name="stlinkv3">
 <packages>
+<package name="STLINKV3_HAT_BRIDGE_MINIMAL_CONTOURLESS">
+<description>Footprint for creating hat like board to the StLink V3 with through hole 1.27 female headers.&lt;br&gt;
+TME order codes:&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;2pcs DS1065-03-2X5S8BV (2x5)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<text x="-2.25" y="9.02" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.25" y="-13.14" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="CENTER" x="0" y="0" drill="3" diameter="6" shape="octagon"/>
+<pad name="SPI_6" x="17.49" y="-17.765" drill="0.65"/>
+<pad name="SPI_5" x="17.49" y="-19.035" drill="0.65"/>
+<pad name="SPI_8" x="18.76" y="-17.765" drill="0.65"/>
+<pad name="SPI_7" x="18.76" y="-19.035" drill="0.65"/>
+<pad name="SPI_10" x="20.03" y="-17.765" drill="0.65"/>
+<pad name="SPI_9" x="20.03" y="-19.035" drill="0.65"/>
+<pad name="SPI_4" x="16.22" y="-17.765" drill="0.65"/>
+<pad name="SPI_3" x="16.22" y="-19.035" drill="0.65"/>
+<pad name="SPI_2" x="14.95" y="-17.765" drill="0.65"/>
+<pad name="SPI_1" x="14.95" y="-19.035" drill="0.65" first="yes"/>
+<pad name="UART_5" x="17.49" y="19.035" drill="0.65"/>
+<pad name="UART_6" x="17.49" y="17.765" drill="0.65"/>
+<pad name="UART_3" x="18.76" y="19.035" drill="0.65"/>
+<pad name="UART_4" x="18.76" y="17.765" drill="0.65"/>
+<pad name="UART_1" x="20.03" y="19.035" drill="0.65"/>
+<pad name="UART_2" x="20.03" y="17.765" drill="0.65"/>
+<pad name="UART_7" x="16.22" y="19.035" drill="0.65"/>
+<pad name="UART_8" x="16.22" y="17.765" drill="0.65"/>
+<pad name="UART_9" x="14.95" y="19.035" drill="0.65"/>
+<pad name="UART_10" x="14.95" y="17.765" drill="0.65" first="yes"/>
+</package>
 <package name="STLINKV3_HAT_BRIDGE_MINIMAL">
 <description>Footprint for creating hat like board to the StLink V3 with through hole 1.27 female headers.&lt;br&gt;
 TME order codes:&lt;br&gt;
@@ -6002,26 +6032,26 @@ TME order codes:&lt;br&gt;
 <text x="-2.25" y="9.02" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.25" y="-13.14" size="1.27" layer="27">&gt;VALUE</text>
 <pad name="CENTER" x="0" y="0" drill="3" diameter="6" shape="octagon"/>
-<pad name="SPI_6" x="16.05" y="-17.765" drill="0.65"/>
-<pad name="SPI_5" x="16.05" y="-19.035" drill="0.65"/>
-<pad name="SPI_8" x="17.32" y="-17.765" drill="0.65"/>
-<pad name="SPI_7" x="17.32" y="-19.035" drill="0.65"/>
-<pad name="SPI_10" x="18.59" y="-17.765" drill="0.65"/>
-<pad name="SPI_9" x="18.59" y="-19.035" drill="0.65"/>
-<pad name="SPI_4" x="14.78" y="-17.765" drill="0.65"/>
-<pad name="SPI_3" x="14.78" y="-19.035" drill="0.65"/>
-<pad name="SPI_2" x="13.51" y="-17.765" drill="0.65"/>
-<pad name="SPI_1" x="13.51" y="-19.035" drill="0.65" first="yes"/>
-<pad name="UART_5" x="16.05" y="19.035" drill="0.65"/>
-<pad name="UART_6" x="16.05" y="17.765" drill="0.65"/>
-<pad name="UART_3" x="17.32" y="19.035" drill="0.65"/>
-<pad name="UART_4" x="17.32" y="17.765" drill="0.65"/>
-<pad name="UART_1" x="18.59" y="19.035" drill="0.65"/>
-<pad name="UART_2" x="18.59" y="17.765" drill="0.65"/>
-<pad name="UART_7" x="14.78" y="19.035" drill="0.65"/>
-<pad name="UART_8" x="14.78" y="17.765" drill="0.65"/>
-<pad name="UART_9" x="13.51" y="19.035" drill="0.65"/>
-<pad name="UART_10" x="13.51" y="17.765" drill="0.65" first="yes"/>
+<pad name="SPI_6" x="17.49" y="-17.765" drill="0.65"/>
+<pad name="SPI_5" x="17.49" y="-19.035" drill="0.65"/>
+<pad name="SPI_8" x="18.76" y="-17.765" drill="0.65"/>
+<pad name="SPI_7" x="18.76" y="-19.035" drill="0.65"/>
+<pad name="SPI_10" x="20.03" y="-17.765" drill="0.65"/>
+<pad name="SPI_9" x="20.03" y="-19.035" drill="0.65"/>
+<pad name="SPI_4" x="16.22" y="-17.765" drill="0.65"/>
+<pad name="SPI_3" x="16.22" y="-19.035" drill="0.65"/>
+<pad name="SPI_2" x="14.95" y="-17.765" drill="0.65"/>
+<pad name="SPI_1" x="14.95" y="-19.035" drill="0.65" first="yes"/>
+<pad name="UART_5" x="17.49" y="19.035" drill="0.65"/>
+<pad name="UART_6" x="17.49" y="17.765" drill="0.65"/>
+<pad name="UART_3" x="18.76" y="19.035" drill="0.65"/>
+<pad name="UART_4" x="18.76" y="17.765" drill="0.65"/>
+<pad name="UART_1" x="20.03" y="19.035" drill="0.65"/>
+<pad name="UART_2" x="20.03" y="17.765" drill="0.65"/>
+<pad name="UART_7" x="16.22" y="19.035" drill="0.65"/>
+<pad name="UART_8" x="16.22" y="17.765" drill="0.65"/>
+<pad name="UART_9" x="14.95" y="19.035" drill="0.65"/>
+<pad name="UART_10" x="14.95" y="17.765" drill="0.65" first="yes"/>
 </package>
 </packages>
 <symbols>
@@ -6107,6 +6137,34 @@ TME order codes:&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
+<device name="CONTOURLESS" package="STLINKV3_HAT_BRIDGE_MINIMAL_CONTOURLESS">
+<connects>
+<connect gate="CENTER_HOLE" pin="1" pad="CENTER"/>
+<connect gate="_SPI_GPIO" pin="!SS" pad="SPI_1"/>
+<connect gate="_SPI_GPIO" pin="GND" pad="SPI_9"/>
+<connect gate="_SPI_GPIO" pin="GPIO0" pad="SPI_2"/>
+<connect gate="_SPI_GPIO" pin="GPIO1" pad="SPI_4"/>
+<connect gate="_SPI_GPIO" pin="GPIO2" pad="SPI_6"/>
+<connect gate="_SPI_GPIO" pin="GPIO3" pad="SPI_8"/>
+<connect gate="_SPI_GPIO" pin="MISO" pad="SPI_5"/>
+<connect gate="_SPI_GPIO" pin="MOSI" pad="SPI_3"/>
+<connect gate="_SPI_GPIO" pin="NC/5V" pad="SPI_10"/>
+<connect gate="_SPI_GPIO" pin="SCK" pad="SPI_7"/>
+<connect gate="_UART_CAN_I2C" pin="CAN_RX" pad="UART_6"/>
+<connect gate="_UART_CAN_I2C" pin="CAN_TX" pad="UART_4"/>
+<connect gate="_UART_CAN_I2C" pin="GND" pad="UART_9"/>
+<connect gate="_UART_CAN_I2C" pin="I2C_SCL" pad="UART_8"/>
+<connect gate="_UART_CAN_I2C" pin="I2C_SDA" pad="UART_2"/>
+<connect gate="_UART_CAN_I2C" pin="NC" pad="UART_10"/>
+<connect gate="_UART_CAN_I2C" pin="UART_CTS" pad="UART_1"/>
+<connect gate="_UART_CAN_I2C" pin="UART_RTS" pad="UART_7"/>
+<connect gate="_UART_CAN_I2C" pin="UART_RX" pad="UART_5"/>
+<connect gate="_UART_CAN_I2C" pin="UART_TX" pad="UART_3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -6154,7 +6212,6 @@ at 30/07/2012 10:08:22</description>
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.4986" x2="-0.4826" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.8636" y1="-1.4986" x2="0.8636" y2="-1.4986" width="0" layer="51"/>
 <wire x1="0.8636" y1="-1.4986" x2="0.8636" y2="-1.1938" width="0" layer="51"/>
 <wire x1="0.8636" y1="-1.1938" x2="0.8636" y2="-0.7112" width="0" layer="51"/>
@@ -6187,15 +6244,15 @@ at 30/07/2012 10:08:22</description>
 <wire x1="1.4986" y1="0.7112" x2="1.4986" y2="1.1938" width="0" layer="51"/>
 <wire x1="1.4986" y1="1.1938" x2="0.8636" y2="1.1938" width="0" layer="51"/>
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<circle x="-1.290903125" y="1.989371875" radius="0.0762" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
 <symbol name="LT1761ES5-3.3TRMPBF">
-<pin name="IN" x="-17.78" y="2.54" length="middle" direction="pwr"/>
-<pin name="~SHDN" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="IN" x="-17.78" y="2.54" length="middle" direction="pas"/>
+<pin name="!SHDN" x="-17.78" y="-2.54" length="middle" direction="in"/>
 <pin name="BYP" x="-17.78" y="-5.08" length="middle" direction="pas"/>
 <pin name="GND" x="-17.78" y="-10.16" length="middle" direction="pas"/>
 <pin name="OUT" x="17.78" y="2.54" length="middle" direction="pas" rot="R180"/>
@@ -6216,11 +6273,11 @@ at 30/07/2012 10:08:22</description>
 <devices>
 <device name="" package="SOT95P280X145-5N">
 <connects>
+<connect gate="A" pin="!SHDN" pad="3"/>
 <connect gate="A" pin="BYP" pad="4"/>
 <connect gate="A" pin="GND" pad="2"/>
 <connect gate="A" pin="IN" pad="1"/>
 <connect gate="A" pin="OUT" pad="5"/>
-<connect gate="A" pin="~SHDN" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
@@ -6239,20 +6296,22 @@ at 30/07/2012 10:08:22</description>
 <library name="OTS_IC_sockets">
 <packages>
 <package name="OTS-16-03">
-<pad name="1" x="-7.145" y="2.6" drill="0.7" shape="octagon"/>
-<pad name="2" x="-4.605" y="1.95" drill="0.7" shape="octagon"/>
-<pad name="3" x="-7.145" y="1.3" drill="0.7" shape="octagon"/>
-<pad name="4" x="-4.605" y="0.65" drill="0.7" shape="octagon"/>
-<pad name="5" x="7.145" y="0.65" drill="0.7" shape="octagon"/>
-<pad name="6" x="4.605" y="1.3" drill="0.7" shape="octagon"/>
-<pad name="7" x="7.145" y="1.95" drill="0.7" shape="octagon"/>
-<pad name="8" x="4.605" y="2.6" drill="0.7" shape="octagon"/>
-<wire x1="-9.37" y1="9" x2="9.37" y2="9" width="0.1" layer="21"/>
-<wire x1="9.37" y1="9" x2="9.37" y2="-9" width="0.1" layer="21"/>
-<wire x1="9.37" y1="-9" x2="-9.37" y2="-9" width="0.1" layer="21"/>
-<wire x1="-9.37" y1="-9" x2="-9.37" y2="9" width="0.1" layer="21"/>
+<pad name="1" x="-8.45" y="4.445" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="-5.91" y="3.175" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="-8.45" y="1.905" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="4" x="-5.91" y="0.635" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="5" x="8.45" y="0.635" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="6" x="5.91" y="1.905" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="7" x="8.45" y="3.175" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="8" x="5.91" y="4.445" drill="0.8" diameter="1.6764" shape="octagon"/>
+<wire x1="-10" y1="9" x2="10" y2="9" width="0.1" layer="21"/>
+<wire x1="10" y1="9" x2="10" y2="-9" width="0.1" layer="21"/>
+<wire x1="10" y1="-9" x2="-10" y2="-9" width="0.1" layer="21"/>
+<wire x1="-10" y1="-9" x2="-10" y2="9" width="0.1" layer="21"/>
 <text x="-3.9" y="9.72" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.9" y="-11.02" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="3" y="-5" drill="2"/>
+<hole x="-3" y="5" drill="2"/>
 </package>
 </packages>
 <symbols>
@@ -6298,6 +6357,104 @@ at 30/07/2012 10:08:22</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOP127P780X200-16N">
+<circle x="-5.435" y="5.055" radius="0.1" width="0.2" layer="21"/>
+<circle x="-5.435" y="5.055" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-2.8" y1="5.25" x2="2.8" y2="5.25" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-5.25" x2="2.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="5.25" x2="2.8" y2="5.25" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="-5.25" x2="2.8" y2="-5.25" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="5.25" x2="-2.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="2.8" y1="5.25" x2="2.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="-4.7" y1="5.5" x2="4.7" y2="5.5" width="0.05" layer="39"/>
+<wire x1="-4.7" y1="-5.5" x2="4.7" y2="-5.5" width="0.05" layer="39"/>
+<wire x1="-4.7" y1="5.5" x2="-4.7" y2="-5.5" width="0.05" layer="39"/>
+<wire x1="4.7" y1="5.5" x2="4.7" y2="-5.5" width="0.05" layer="39"/>
+<text x="-4.77" y="-5.427" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-4.77" y="5.427" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-3.465" y="4.445" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="2" x="-3.465" y="3.175" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="3" x="-3.465" y="1.905" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="4" x="-3.465" y="0.635" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="5" x="-3.465" y="-0.635" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="6" x="-3.465" y="-1.905" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="7" x="-3.465" y="-3.175" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="8" x="-3.465" y="-4.445" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="9" x="3.465" y="-4.445" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="10" x="3.465" y="-3.175" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="11" x="3.465" y="-1.905" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="12" x="3.465" y="-0.635" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="13" x="3.465" y="0.635" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="14" x="3.465" y="1.905" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="15" x="3.465" y="3.175" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+<smd name="16" x="3.465" y="4.445" dx="1.97" dy="0.61" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MX25L25635E">
+<wire x1="-15.24" y1="10.16" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="12.7" size="1.27" layer="95" rot="R180">&gt;NAME</text>
+<text x="-15.24" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="!CS" x="-20.32" y="-7.62" length="middle" direction="in"/>
+<pin name="MISO/SIO1" x="-20.32" y="-10.16" length="middle" direction="out"/>
+<pin name="!WP!/SIO2" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="VCC" x="-20.32" y="5.08" length="middle" direction="pas"/>
+<pin name="!HOLD/SIO3" x="-20.32" y="7.62" length="middle" direction="in"/>
+<pin name="SCK" x="20.32" y="7.62" length="middle" direction="in" function="clk" rot="R180"/>
+<pin name="MOSI/SIO0" x="20.32" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="!RESET" x="-20.32" y="2.54" length="middle" direction="in"/>
+<pin name="NC@4" x="-20.32" y="0" length="middle" direction="nc"/>
+<pin name="NC@5" x="-20.32" y="-2.54" length="middle" direction="nc"/>
+<pin name="NC@6" x="-20.32" y="-5.08" length="middle" direction="nc"/>
+<pin name="NC@11" x="20.32" y="-5.08" length="middle" direction="nc" rot="R180"/>
+<pin name="NC@12" x="20.32" y="-2.54" length="middle" direction="nc" rot="R180"/>
+<pin name="NC@13" x="20.32" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="NC@14" x="20.32" y="2.54" length="middle" direction="nc" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MX25L25635E" prefix="U">
+<gates>
+<gate name="G$1" symbol="MX25L25635E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP127P780X200-16N">
+<connects>
+<connect gate="G$1" pin="!CS" pad="7"/>
+<connect gate="G$1" pin="!HOLD/SIO3" pad="1"/>
+<connect gate="G$1" pin="!RESET" pad="3"/>
+<connect gate="G$1" pin="!WP!/SIO2" pad="9"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="MISO/SIO1" pad="8"/>
+<connect gate="G$1" pin="MOSI/SIO0" pad="15"/>
+<connect gate="G$1" pin="NC@11" pad="11"/>
+<connect gate="G$1" pin="NC@12" pad="12"/>
+<connect gate="G$1" pin="NC@13" pad="13"/>
+<connect gate="G$1" pin="NC@14" pad="14"/>
+<connect gate="G$1" pin="NC@4" pad="4"/>
+<connect gate="G$1" pin="NC@5" pad="5"/>
+<connect gate="G$1" pin="NC@6" pad="6"/>
+<connect gate="G$1" pin="SCK" pad="16"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6318,11 +6475,11 @@ at 30/07/2012 10:08:22</description>
 <part name="P+12" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+21" library="supply1" deviceset="+3V3" device=""/>
 <part name="SPI_FLASH" library="martonmiklos" deviceset="SO8_LONG" device="" value="SPI_SO8"/>
-<part name="CON1" library="stlinkv3" deviceset="STLINK_V3_HAT_BRIDGE_AND_UART_MINIMAL" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="CON1" library="stlinkv3" deviceset="STLINK_V3_HAT_BRIDGE_AND_UART_MINIMAL" device="CONTOURLESS" value="STLINK_V3_HAT_BRIDGE_AND_UART_MINIMALCONTOURLESS"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="51"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="51"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="51"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="51"/>
 <part name="SUPPLY1" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply1" deviceset="GND" device=""/>
@@ -6347,6 +6504,10 @@ at 30/07/2012 10:08:22</description>
 <part name="SUPPLY6" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+6" library="supply1" deviceset="+3V3" device=""/>
+<part name="U1" library="SparkFun" deviceset="MX25L25635E" device=""/>
+<part name="P+7" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY7" library="supply1" deviceset="GND" device=""/>
+<part name="P+8" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6487,6 +6648,19 @@ at 30/07/2012 10:08:22</description>
 <instance part="P+6" gate="G$1" x="220.98" y="68.58" smashed="yes">
 <attribute name="VALUE" x="218.44" y="71.12" size="1.778" layer="96"/>
 </instance>
+<instance part="U1" gate="G$1" x="53.34" y="86.36" smashed="yes">
+<attribute name="NAME" x="43.18" y="99.06" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="38.1" y="71.12" size="1.27" layer="96"/>
+</instance>
+<instance part="P+7" gate="G$1" x="30.48" y="101.6" smashed="yes">
+<attribute name="VALUE" x="27.94" y="104.14" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY7" gate="1" x="78.74" y="71.12" smashed="yes">
+<attribute name="VALUE" x="76.2" y="68.58" size="1.778" layer="96"/>
+</instance>
+<instance part="P+8" gate="G$1" x="81.28" y="101.6" smashed="yes">
+<attribute name="VALUE" x="78.74" y="104.14" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6558,6 +6732,12 @@ at 30/07/2012 10:08:22</description>
 <wire x1="220.98" y1="53.34" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SOCKET1" gate="G$1" pin="4"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<wire x1="73.66" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="SUPPLY7" gate="1" pin="GND"/>
+<wire x1="78.74" y1="78.74" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -6611,6 +6791,26 @@ at 30/07/2012 10:08:22</description>
 <wire x1="220.98" y1="58.42" x2="220.98" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SOCKET1" gate="G$1" pin="3"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="P+7" gate="G$1" pin="+3V3"/>
+<wire x1="33.02" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="91.44" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="!HOLD/SIO3"/>
+<wire x1="30.48" y1="93.98" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
+<junction x="30.48" y="93.98"/>
+<pinref part="U1" gate="G$1" pin="!RESET"/>
+<wire x1="33.02" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="88.9" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
+<junction x="30.48" y="91.44"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="!WP!/SIO2"/>
+<wire x1="73.66" y1="76.2" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="P+8" gate="G$1" pin="+3V3"/>
+<wire x1="81.28" y1="76.2" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="MOSI_FLASH" class="0">
 <segment>
@@ -6627,6 +6827,11 @@ at 30/07/2012 10:08:22</description>
 <wire x1="248.92" y1="55.88" x2="261.62" y2="55.88" width="0.1524" layer="91"/>
 <label x="261.62" y="55.88" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="SOCKET1" gate="G$1" pin="5"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="MOSI/SIO0"/>
+<wire x1="73.66" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
+<label x="86.36" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="SCK_FLASH" class="0">
@@ -6645,6 +6850,11 @@ at 30/07/2012 10:08:22</description>
 <label x="261.62" y="58.42" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="SOCKET1" gate="G$1" pin="6"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="SCK"/>
+<wire x1="73.66" y1="93.98" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
+<label x="86.36" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
 </net>
 <net name="!SS_FLASH" class="0">
 <segment>
@@ -6661,6 +6871,11 @@ at 30/07/2012 10:08:22</description>
 <wire x1="223.52" y1="63.5" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
 <label x="215.9" y="63.5" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="SOCKET1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="!CS"/>
+<wire x1="33.02" y1="78.74" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
+<label x="22.86" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!SS_STLINK" class="0">
@@ -6707,6 +6922,11 @@ at 30/07/2012 10:08:22</description>
 <label x="215.9" y="60.96" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="SOCKET1" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="MISO/SIO1"/>
+<wire x1="33.02" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+<label x="22.86" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -6730,7 +6950,7 @@ at 30/07/2012 10:08:22</description>
 <wire x1="200.66" y1="-35.56" x2="195.58" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="-35.56" x2="180.34" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="-35.56" x2="180.34" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="~SHDN"/>
+<pinref part="U2" gate="A" pin="!SHDN"/>
 <wire x1="200.66" y1="-40.64" x2="195.58" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="-40.64" x2="195.58" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="195.58" y="-35.56"/>
@@ -6748,6 +6968,11 @@ at 30/07/2012 10:08:22</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,104.14,17.78,CON1_UART_CAN_I2C,UART_CTS,,,,"/>
+<approved hash="202,1,104.14,12.7,CON1_UART_CAN_I2C,UART_RX,,,,"/>
+<approved hash="202,1,137.16,12.7,CON1_UART_CAN_I2C,CAN_RX,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
